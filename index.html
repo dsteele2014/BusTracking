@@ -14,89 +14,87 @@
 </head>
 <body>
     <div class="page-title">
-        <div class="title-text"><h1>Bus Tracking System</h1></div>
-        <div class="admin-controls">
-            <div class="admin-button" id="manage-users"></div>
-            <div class="admin-button" id="edit-routes"></div>
-        </div>
+        <h1>Bus Tracking System</h1>
     </div>
     <div class="page-content">
         <div class="side-bar">
             <div class="tab-title"><p>Favorites</p>
                 <div class="tab">
                     <input id="tab-one" type="checkbox" name="tabs">
-                    <label for="tab-one">Route 1</label>
+                    <label for="tab-one">Bus #4</label>
                     <div class="tab-content">
-                        <p>ETA... Never</p>
+                        <p>ETA... 5 minutes</p>
                     </div>
                 </div>
             </div>
             <div class="tab-title"><p>All Routes</p>
                 <div class="tab">
                     <input id="tab-three" type="checkbox" name="tabs">
-                    <label for="tab-three">Route 1</label>
+                    <label for="tab-three">Bus #1</label>
                     <div class="tab-content">
-                        <p>ETA...5min</p>
+                        <p>ETA... 11 minutes </p>
                     </div>
                 </div>
                 <div class="tab">
                     <input id="tab-four" type="checkbox" name="tabs">
-                    <label for="tab-four">Route 2</label>
+                    <label for="tab-four">Bus #2</label>
                     <div class="tab-content">
                         <p>ETA...3.5min</p>
                     </div>
                 </div>
                 <div class="tab">
                     <input id="tab-five" type="checkbox" name="tabs">
-                    <label for="tab-five">Route 3</label>
+                    <label for="tab-five">Bus #3</label>
                     <div class="tab-content">
                         <p>ETA...50min</p>
                     </div>
                 </div>
                 <div class="tab">
                     <input id="tab-six" type="checkbox" name="tabs">
-                    <label for="tab-six">Route 3</label>
+                    <label for="tab-six">Bus #4</label>
                     <div class="tab-content">
                         <p>ETA...50min</p>
                     </div>
                 </div>
                 <div class="tab">
                     <input id="tab-seven" type="checkbox" name="tabs">
-                    <label for="tab-seven">Route 3</label>
+                    <label for="tab-seven">Bus #5</label>
                     <div class="tab-content">
                         <p>ETA...50min</p>
                     </div>
                 </div>
                 <div class="tab">
                     <input id="tab-eight" type="checkbox" name="tabs">
-                    <label for="tab-eight">Route 3</label>
+                    <label for="tab-eight">Bus #6</label>
                     <div class="tab-content">
                         <p>ETA...50min</p>
                     </div>
                 </div>
                 <div class="tab">
                     <input id="tab-nine" type="checkbox" name="tabs">
-                    <label for="tab-nine">Route 3</label>
+                    <label for="tab-nine">Bus #7</label>
                     <div class="tab-content">
                         <p>ETA...50min</p>
                     </div>
                 </div>
                 <div class="tab">
                     <input id="tab-ten" type="checkbox" name="tabs">
-                    <label for="tab-ten">Route 3</label>
+                    <label for="tab-ten">Bus #8</label>
                     <div class="tab-content">
                         <p>ETA...50min</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="main-content">
             <div id="mapid"></div>
             <script>
                 mapboxgl.accessToken = 'pk.eyJ1IjoiZHN0ZWVsZTIwMTQiLCJhIjoiY2phdHY3ejRtMXp2YjJ4bWlpdXRidGZpNSJ9.gdQdIvN_1N0mlrCFnwjLCw';
                 var map = new mapboxgl.Map({
                     container: 'mapid',
-                    style: 'mapbox://styles/mapbox/streets-v10'});
+                    style: 'mapbox://styles/mapbox/streets-v10'
+                });
             </script>
         </div>
     </div>
