@@ -2,6 +2,9 @@ body{
     font-family: Arial,Times,serif;
     margin: 0px;
     background-color: #c3cbd8;
+    padding: 0px;
+    border: 0px;
+
 }
 
 h1{
@@ -20,7 +23,7 @@ h1{
 
 .side-bar{
     width: 40%;
-    height: auto;
+    height: 105%;
     background: gray;
 }
 /*Start Tab formatting*/
@@ -102,6 +105,9 @@ input[type=radio]:checked + label::after {
     display: inline-flex;
     height: 100%;
     width: 100%;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
     
 }
 .main-content{
