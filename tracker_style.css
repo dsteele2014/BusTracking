@@ -1,30 +1,25 @@
 body{
     font-family: Arial,Times,serif;
-    color: black;
-    background-color: white;
-    border: 0px;
-    padding: 0px;
     margin: 0px;
+    background-color: #c3cbd8;
 }
-.page-title{
-    background-color: #163466;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1010px;
-    height: 140px;
-}
+
 h1{
     text-align: center;
     color: #87bcb8;
     font-size: 40px;
     font-family: Arial, sans-serif;
     font: Arial;
+    width: 100%;
+    height: 140px;
+    vertical-align: middle;
+    line-height: 140px;
+    background-color: #163466;
+    margin: 0;
 }
 
 .side-bar{
-    margin-top: 140px;
-    width: 300;
+    width: 40%;
     height: auto;
     background: gray;
 }
@@ -104,27 +99,18 @@ input[type=radio]:checked + label::after {
 }
 /*End Tab Formatting*/
 .page-content{
-
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    
 }
 .main-content{
-    position: absolute;
-    top: 140px;
-    left: 300px;
-    height: 550px;
-    width: 650px;
-    padding-left: 60px;
-    background-color: #c3cbd8;
+   padding: 20px;
+    height: auto;
+    width: 100%;
 }
 #mapid{
-    margin-top: 20px;
-    width: 600px;
-    height:500px;
-    border: 20px;
-}
-div.footer{
-    background-color: #163466;
-    position: absolute;
-    left: 0px;
     width: 100%;
-    height: 100px;
+    height: 100%;
+
 }
