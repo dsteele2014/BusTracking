@@ -2,18 +2,19 @@
 <html>
 <head>
     <title>Bus Tracker</title>
+    
     <link rel="stylesheet" href="tracker_style.css">
-    <link rel="stylesheet" href="Leaflet/leaflet.css"
-   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
-   crossorigin=""/>
-    <script src="Leaflet/leaflet.js"
-   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
-   crossorigin=""></script>
+    <link rel="stylesheet" href="map_style.css">
+    <link rel="stylesheet" href="tab_style.css">
+    <link rel="stylesheet" href="Leaflet/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ== "crossorigin=""/>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet'/>
+    
+    <script src="Leaflet/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="tab_script.js"></script>  
 </head>
     
-<body>
+<body onload="makeTab();">
     <div class="page-title">
         <h1>Bus Tracking System</h1>
     </div>
@@ -99,5 +100,7 @@
             </script>
         </div>
     </div>
+    
+    
 </body>
 </html>
