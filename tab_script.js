@@ -26,3 +26,6 @@ function makeTab(){
             tab.appendChild(tabContent);
             tabTitle[1].appendChild(tab);
         }
+function parseJson(){
+    
+}
