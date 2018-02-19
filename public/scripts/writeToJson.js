@@ -9,8 +9,8 @@ const con = mysql.createConnection({
 });
 
 con.query("SELECT * FROM stop", (err,rows)=>{
-            if (err) throw err;
-    fs.writeFile('test.json',rows,(err)=>{
+    if (err) throw err;
+    fs.writeFile('test.json',JSON.stringify(rows),(err)=>{
         if(err) throw err;
         console.log('Json created');
     });
