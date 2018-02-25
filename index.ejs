@@ -5,23 +5,29 @@
 
     <link rel="stylesheet" href="/css/tracker_style.css">
     <link rel="stylesheet" href="/css/map_style.css">
-    
     <link rel="stylesheet" href="/css/tab_style.css">
-    <script src="/scripts/tab_script.js"></script>
-    
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
-    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-    
-    <script type="text/javascript" src="/scripts/MovingMarker.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<script src="/scripts/tab_script.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+    
+<!--This script will be modified to update the json based on the database once there is route editing-->
+<script>
+        $(document).ready(function(){
+        $("#button").click(function(){
+            $.post("http://localhost:3000/updateJson",function(){
+            });
+        });
+    });
+</script>
     
 </head>
 
 <body onload="makeTab();">
+
     <div class="page-title">
         <h1>Bus Tracking System</h1>
     </div>
